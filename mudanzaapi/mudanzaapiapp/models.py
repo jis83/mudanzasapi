@@ -43,7 +43,6 @@ class Presupuesto(models.Model):
     # Cliente que realizo el presupuesto
     user = models.ForeignKey(User)
     valor = models.FloatField(max_length=200)
-    # PENDIENTE
     # (Estado inicial)/ACEPTADO (Usuario acepto preupuesto)/PAGADO
     # (Cliente pago)
     estado = models.CharField(max_length=200)
